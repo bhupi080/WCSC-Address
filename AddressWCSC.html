@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Class Skill Centre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('WCSC.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: transparent;
+        }
+        .content-box {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            border-radius: 0;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 38px;
+            margin: 20px 0;
+            animation: slide-up 1.5s ease-in-out;
+        }
+        @keyframes slide-up {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover img {
+            transform: scale(1.05);
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .map {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .address {
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .address strong {
+            font-weight: bold;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: #3498db;
+        }
+
+        /* Divider Styling */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <header>
+                <img src="logo.jpeg" alt="World Class Skill Centre Logo">
+                <h1>World Class Skill Centre</h1>
+            </header>
+
+            <div class="section">
+                <h2>Via Metro</h2>
+                <p>1. Take the Blue Line and get off at <strong>Tilak Nagar Metro Station (Gate No. 3)</strong>. After exiting, head towards Jail Road.</p>
+                <p>2. From there, you can take a short taxi/auto ride or hop on an e-rickshaw (heading towards Delhi Cantt) and ask to be dropped off at <strong>ITI Hari Nagar</strong>.</p>
+                <img src="Metro.jpeg" alt="Metro Map">
+                <a class="btn" href="https://en.wikipedia.org/wiki/Blue_Line_(Delhi_Metro)" target="_blank">Learn More About Blue Line</a>
+            </div>
+
+            <hr> <!-- Divider between Metro and Bus -->
+
+            <div class="section">
+                <h2>Via Bus</h2>
+                <p>1. The nearby bus stop is <strong>Tihar Jail</strong>, and the World Class Skill Centre is just a 5-minute (350 meters) walk from the bus stand.</p>
+                <p>2. If you're coming from Tilak Nagar Metro and prefer to take a bus, hop on <strong>Bus No. 588 or 793</strong> to reach <strong>Tihar Jail Bus Stop</strong>.</p>
+                <img src="bus.jpg" alt="Bus Route">
+                <a class="btn" href="https://www.google.com/maps/dir//Sun+foundation+World+class+skill+center,+Block+EC,+Maya+Enclave,+Hari+Nagar,+New+Delhi,+Delhi/@28.6228462,77.110391,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x390d03483a256aad:0x152b308726551333!2m2!1d77.1050847!2d28.6197373!3e3?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Bus Route</a>
+            </div>
+
+            <div class="map">
+                <h2>Location on Google Maps</h2>
+                <p><a href="https://www.google.com/maps/place/Sun+foundation+World+class+skill+center/@28.6198176,77.1050448,17z/data=!3m1!4b1!4m6!3m5!1s0x390d03483a256aad:0x152b308726551333!8m2!3d28.6198176!4d77.1050448!16s%2Fg%2F11p43rwgz9?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Open in Google Maps</a></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.8655242405646!2d77.1050448!3d28.6198176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03483a256aad%3A0x152b308726551333!2sSun%20foundation%20World%20class%20skill%20center!5e0!3m2!1sen!2sin!4v1697462564148!5m2!1sen!2sin" allowfullscreen></iframe>
+
+                <div class="address">
+                    <p><strong>Time:</strong> 10:00 AM to 5:00 PM</p>
+                    <p><strong>Address:</strong> World Class Skill Centre ITI Campus, Jail Road, Hari Nagar, Delhi – 110064</p>
+                    <p><strong>Contact Numbers:</strong> 8287216246, 011-25121111, 011-25131111</p>
+                    <p><strong>Emails:</strong> wcsc@sunfoundationindia.org, info@sunfoundationindia.org</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
